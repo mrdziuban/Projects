@@ -9,6 +9,8 @@ def handle_nums(num1, op, num2):
 		return num1 * num2
 	elif op == '/':
 		return num1 / num2
+	elif op == '**':
+		return num1 ** num2
 	else:
 		return 0
 
