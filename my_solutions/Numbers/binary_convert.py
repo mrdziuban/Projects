@@ -1,5 +1,5 @@
 def dec_to_bin():
-	num = int(raw_input('Enter a decimal number: '))
+	num = int(input('Enter a decimal number: '))
 	if num == 0:
 		return '0'
 	res = ''
@@ -12,7 +12,7 @@ def dec_to_bin():
 	return res
 
 def bin_to_dec():
-	num = raw_input('Enter a binary number: ')
+	num = input('Enter a binary number: ')
 	num = num[::-1]
 	i = 1
 	res = 0
@@ -21,9 +21,9 @@ def bin_to_dec():
 		i *= 2
 	return res
 
-print '1. Decimal to binary\n2. Binary to decimal'
-selection = int(raw_input('Enter your selection: '))
+print('1. Decimal to binary\n2. Binary to decimal')
+selection = int(input('Enter your selection: '))
 if selection == 1:
-	print dec_to_bin()
+	print(dec_to_bin())
 elif selection == 2:
-	print bin_to_dec()
+	print(bin_to_dec())

@@ -4,9 +4,6 @@ def count_vowels(string):
     if l in vowels.keys():
       vowels[l] += 1
   return vowels
-  vowels.keys().sort(key)
 
-string = raw_input('Enter your string: ')
-print count_vowels(string)
-for vowel in vowels.keys().sort(by key):
-  print str(vowel) + ': ' + vowels[vowel]
+string = input('Enter your string: ')
+print(count_vowels(string))

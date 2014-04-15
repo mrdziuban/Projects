@@ -4,8 +4,8 @@ def make_change(amt):
 	for coin in coins:
 		func_name = 'coin_'+str(coin)
 		coin_name = globals()[func_name]()
-		num_coins = int(amt) / int(coin)
-		print str(num_coins) + ' ' + coin_name
+		num_coins = int(amt) // int(coin)
+		print(str(num_coins) + ' ' + coin_name)
 		amt -= (num_coins * coin)
 
 def coin_25():
@@ -17,5 +17,5 @@ def coin_5():
 def coin_1():
 	return 'pennies'
 
-amt = float(raw_input('Enter an amount: $'))
+amt = float(input('Enter an amount: $'))
 make_change(amt)

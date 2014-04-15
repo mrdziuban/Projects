@@ -24,5 +24,5 @@ def calculate(exp):
 		del parts[1]
 	return parts[0]
 
-expression = raw_input('Enter your expression: ')
-print expression + ' = ' + str(calculate(expression))
+expression = input('Enter your expression: ')
+print(expression + ' = ' + str(calculate(expression)))

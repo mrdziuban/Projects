@@ -11,11 +11,11 @@ def find_next(n):
 	return n
 
 def loop(start):
-	user_input = raw_input('Find next prime? (y/n): ')
+	user_input = input('Find next prime? (y/n): ')
 	if user_input == 'n':
 		return
 	prime = find_next(start)
-	print prime
+	print(prime)
 	loop(prime)
 
 loop(0)

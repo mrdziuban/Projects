@@ -9,5 +9,5 @@ def reverse(string):
 def reverse_easy(string):
   return string[::-1]
 
-string = raw_input('Enter string: ')
-print reverse_easy(string)
+string = input('Enter string: ')
+print(reverse_easy(string))
